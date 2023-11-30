@@ -5,6 +5,11 @@ Time to explore the commit structure in detail. We'll examine how Git stores dat
 Git stores data through commits, which have three parts. The first is the commit itself, which contains metadata such as the author, commit message, and time of the commit. The second part is a tree, which tracks the names and locations in the repo when that commit happened. For each file listed in the tree, there is a blob, which is short for binary large object. A blob may contain data of any kind. Blobs contain a compressed snapshot of the contents of the file when the commit happened.
 
 ## Visualizing the commit structure
+
+
+![image](https://github.com/akshaymalik1995/datacamp/assets/55041489/849ace98-900a-48d5-a19e-6d126427eaa2)
+
+
 Here, we visualize three commits to our repo to see these three individual components.
 
 In the first commit, we can see a unique identifier ending in six-five. This identifier is known as a hash, which we will discuss later. In the tree, we see two files were modified - `report.md` and `mental-health-survey.csv`. The blob shows a snapshot of what the files contained at that time.
